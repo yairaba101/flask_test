@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'tar -zcvf flask_test.tar.gz flask_test'
+        sh 'tar -zcvf flask_test.tar.gz .'
       }
     }
   }
