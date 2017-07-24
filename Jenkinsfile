@@ -9,9 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''echo "test"
-echo hostname
-echo whoami
-sleep 20'''
+'''
       }
     }
   }
