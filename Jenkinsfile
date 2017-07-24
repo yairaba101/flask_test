@@ -8,7 +8,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'tar -zcvf flask_test.tar.gz flask_hello/'
+        sh '''echo "test"
+echo hostname
+echo whoami
+sleep 20'''
       }
     }
   }
