@@ -10,9 +10,9 @@ pipeline {
       steps {
         sh '''echo "test"
 '''
-        sh '''echo hostname
+        sh '''hostname
 '''
-        sh '''echo whoami
+        sh '''whoami
 '''
         sh 'sleep 20'
       }
