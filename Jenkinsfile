@@ -1,20 +1,14 @@
 pipeline {
   agent {
     node {
-      label 'docker-slave'
+      label 'dockercli-slave'
     }
     
   }
   stages {
     stage('build') {
       steps {
-        sh '''echo "test"
-'''
-        sh '''hostname
-'''
-        sh '''whoami
-'''
-        sh 'sleep 20'
+        sh 'docker build -t hello:0.0.1 .'
       }
     }
   }
